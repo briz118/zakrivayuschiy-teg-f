@@ -13,8 +13,6 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--base-font);
-  font-variation-settings: var(--base-weight);
   background-image: var(--gradient-horizontal), var(--gradient-vertical), var(--gradient-color);
   background-attachment: fixed;
   background-size: cover;
@@ -50,6 +48,8 @@
 }
 
 .main {
+  font-family: var(--base-font);
+  font-variation-settings: var(--base-weight);
   font-size: 18px;
 }
 
@@ -196,7 +196,6 @@ article p {
   outline: none;
   transition: border 0.3s ease;
   cursor: pointer;
-  outline: none;
 }
 
 .card__icon-button:focus-visible {
