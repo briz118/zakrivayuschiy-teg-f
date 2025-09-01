@@ -13,4 +13,357 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--base-font);
+  font-variation-settings: var(--base-weight);
+  background-image: var(--gradient-horizontal), var(--gradient-vertical), var(--gradient-color);
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
+
+.width-block {
+  width: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
+}
+
+.header {
+  background-color: #fff;
+  font-family: var(--accent-font);
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: var(--accent-color) solid 2px;
+}
+
+.header h1 {
+  font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);
+  text-transform: uppercase;
+  padding-top: clamp(7.5rem, 7.324rem + 0.75vw, 8rem);
+  text-align: center;
+}
+
+.header h2 {
+  font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: clamp(7.5rem, 7.324rem + 0.75vw, 8rem);
+}
+
+.main {
+  font-size: 18px;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  margin: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+h3 {
+  border: var(--accent-color) solid 2px;
+  font-weight: 715;
+  line-height: 120%;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.article-images-block {
+  position: relative;
+  display: inline-block;
+  border: var(--accent-color) solid 2px;
+  height: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.images-lable {
+  position: absolute;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  top: 24px;
+  right: 25px;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow: 1px 1px 1px var(--border-text-color), -1px -1px 1px var(--border-text-color);
+}
+
+@supports ((text-stroke: 1px var(--border-text-color)) or (-webkit-text-stroke: 1px var(--border-text-color))) {
+  .images-lable {
+    -webkit-text-stroke: 1px var(--border-text-color);
+  }
+}
+
+.article-paragraf {
+  line-height: 21px;
+  border: var(--accent-color) solid 2px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+article p {
+  padding-top: 23px;
+}
+
+.card__like-button {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  margin: 25px 0px;
+  border: var(--accent-color) solid 2px;
+  width: 130px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-button-block {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.like-icon {
+  inline-size: auto;
+  block-size: auto;
+  background-color: #fff;
+}
+
+.button {
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.button__text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 37px;
+  inline-size: 40px;
+  margin-top: 26px;
+  padding: 0;
+  border: none;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+  transition: border 0.3s ease;
+  outline: none;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.block-button-save {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.button-save {
+  margin: 0 auto;
+  border: var(--accent-color) solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 18px;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.floppy-svg {
+  position: relative;
+  inline-size: 28px;
+  z-index: 2;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+@media (width >= 376px) {
+  .button-save {
+    flex-direction: row;
+}
+
+.floppy-svg {
+  inline-size: 21px;
+}
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+}
+
+.dialog[open] {
+  display: flex;
+}
+
+.dialog {
+  width: clamp(21.313rem, 21.048rem + 1.13vw, 22.063rem);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px 40px;
+  text-transform: uppercase;
+}
+
+.dialog-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  line-height: 150%;
+}
+
+.dialog-floppy-svg {
+  inline-size: 39px;
+  block-size: 39px;
+  flex-shrink: 0;
+}
+
+.dialog-button {
+  border: var(--accent-color) solid 2px;
+  padding: 10px;
+}
+
+dialog::backdrop {
+ background: rgba(0, 0, 0, 0.7);
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.main-body {
+  transition: fill 0.3s linear;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon:hover .core {
+  animation: core-hover 0.3s linear forwards 0s;
+}
+
+.like-icon:hover .main-body {
+  animation: main-body-hover 0.3s linear forwards 0.05s;
+}
+
+.like-icon:active .core {
+  animation: core-activ 0.3s linear forwards 0s;
+}
+
+.like-icon:active .main-body {
+  animation: main-body-activ 0.3s linear forwards 0.05s;
+}
+
+.like-icon.is-liked .core {
+  animation: click 0.3s linear forwards 0s;
+}
+
+.like-icon.is-liked .main-body {
+  animation: click 0.3s linear forwards 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  animation: click 0.3s linear forwards 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart 0.3s ease-in 0.1s;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in forwards 0.3s;
+}
+
+.images-crag {
+  filter: brightness(80%);;
+}
+
+.images-mountains {
+  filter: contrast(70%);
+}
+
+.images-route {
+  filter: blur(2px);
+}
+
+.images-pressure {
+  filter: grayscale(0.4);
+}
+
+.images-time {
+  filter: saturate(140%);
+}
+
+.images-time2 {
+  filter: hue-rotate(90deg);
+}
+
+.images-road {
+  filter: sepia(70%) contrast(110%) invert(0.2);
+}
+
+
