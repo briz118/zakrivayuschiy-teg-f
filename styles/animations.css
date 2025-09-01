@@ -9,57 +9,7 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-/*
-@keyframes core-hover {
-   from {
-     fill: transparent;
-   }
 
-   to {
-    fill: var(--accent-color);
-   }
-}
-
-@keyframes main-body-hover {
-   from {
-     fill: transparent;
-   }
-
-   to {
-    fill: var(--accent-color);
-   }
-}
-
-@keyframes core-activ {
-     from {
-     fill: transparent;
-   }
-
-   to {
-    fill: var(--animation-fill-color);
-   }
-}
-
-@keyframes main-body-activ {
-       from {
-     fill: transparent;
-   }
-
-   to {
-    fill: var(--animation-fill-color);
-   }
-}
-
-@keyframes click {
-       from {
-     fill: transparent;
-   }
-
-   to {
-    fill: var(--animation-fill-color);
-   }
-}
-*/
 @keyframes heart {
     from {
       transform: scale(1);
