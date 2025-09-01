@@ -176,6 +176,8 @@ article p {
 }
 
 .button__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
   position: relative;
   z-index: 2;
   color: #fff;
@@ -190,8 +192,8 @@ article p {
   inline-size: 40px;
   margin-top: 26px;
   padding: 0;
-  border: none;
   border: 2px solid transparent;
+  outline: none;
   transition: border 0.3s ease;
   cursor: pointer;
   outline: none;
@@ -240,11 +242,6 @@ article p {
 .floppy-svg {
   inline-size: 21px;
 }
-}
-
-.button__text {
-  font-family: var(--accent-font);
-  font-size: 14px;
 }
 
 .dialog[open] {
