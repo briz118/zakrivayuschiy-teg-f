@@ -347,31 +347,31 @@ dialog::backdrop {
   animation: sparks 0.3s ease-in forwards 0.3s;
 }
 
-.images-crag .filter-brightness {
+.filter-brightness {
   filter: brightness(80%);;
 }
 
-.images-mountains .filter-contrast {
+.filter-contrast {
   filter: contrast(70%);
 }
 
-.images-route .filter-blur {
+.filter-blur {
   filter: blur(2px);
 }
 
-.images-pressure .filter-grayscale {
+.filter-grayscale {
   filter: grayscale(0.4);
 }
 
-.images-time .filter-saturate {
+.filter-saturate {
   filter: saturate(140%);
 }
 
-.images-time2 .filter-hue-rotate {
+.filter-hue-rotate {
   filter: hue-rotate(90deg);
 }
 
-.images-road .filter-sepia-contrast-invert {
+.filter-sepia-contrast-invert {
   filter: sepia(70%) contrast(110%) invert(0.2);
 }
 
