@@ -10,7 +10,7 @@
 
 */
 
-@keyframes heart {
+@keyframes heart-scale {
     from {
       transform: scale(1);
     }
