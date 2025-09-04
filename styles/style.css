@@ -15,11 +15,10 @@
   font-variation-settings: 'wght' var(--base-weight), 'slnt' 0;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-color: #d3d3d3;
+  background-color: #fff;
   background-image: var(--gradient-horizontal), var(--gradient-vertical), var(--gradient-color);
   background-attachment: fixed;
   background-size: cover;
-  background-blend-mode: multiply;
 }
 
 .width-block {
@@ -63,7 +62,7 @@
   margin: auto;
 }
 
-article {
+.article {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -194,8 +193,8 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  block-size: 37px;
-  inline-size: 40px;
+  block-size: 38px;
+  inline-size: 41x;
   margin-top: 26px;
   padding: 0;
   border: 2px solid transparent;
@@ -212,6 +211,7 @@ article {
 
 .card__icon-button:focus {
   outline: none;
+  border: none;
 }
 
 .block-button-save {
@@ -339,12 +339,12 @@ dialog::backdrop {
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s;
+  animation: scale-increases 0.3s ease-in 0.1s;
   transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in forwards 0.3s;
+  animation: appearance-disappearance 0.3s ease-in forwards 0.3s;
 }
 
 .filter-brightness {

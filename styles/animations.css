@@ -10,7 +10,7 @@
 
 */
 
-@keyframes heart-scale {
+@keyframes scale-increases {
     from {
       transform: scale(1);
     }
@@ -19,7 +19,7 @@
     }
 }
 
-@keyframes sparks {
+@keyframes appearance-disappearance {
  0% {
  opacity: 0;
  }
