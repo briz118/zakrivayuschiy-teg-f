@@ -133,14 +133,6 @@
   gap: 5px;
 }
 
-.like-icon {
-  inline-size: auto;
-  block-size: auto;
-  background-color: #fff;
-  outline: none;
-  border: none;
-}
-
 .button {
   position: relative;
   transition: box-shadow 0.3s ease;
@@ -194,24 +186,26 @@
   justify-content: center;
   align-items: center;
   block-size: 38px;
-  inline-size: 41x;
-  margin-top: 26px;
+  inline-size: 41px;
+  margin-top: 25px;
   padding: 0;
-  border: 2px solid transparent;
+  border: none;
   outline: none;
-  transition: border 0.3s ease;
   cursor: pointer;
 }
 
-.card__icon-button:focus-visible {
-  border: 2px solid var(--accent-color);
-  transition: border 0.3s ease;
+.like-icon {
+  inline-size: auto;
+  block-size: auto;
+  background-color: #fff;
   outline: none;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
 }
 
-.card__icon-button:focus {
-  outline: none;
-  border: none;
+.card__icon-button:focus-visible .like-icon {
+  border: 2px solid var(--accent-color);
+  transition: border 0.3s ease;
 }
 
 .block-button-save {
@@ -222,7 +216,6 @@
 
 .button-save {
   margin: 0 auto;
-  /*border: var(--accent-color) solid 2px;*/
   flex-direction: column;
   padding: 16px 18px;
   gap: 6px;
